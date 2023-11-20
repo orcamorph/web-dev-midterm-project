@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HonorBank</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">HONORBANK</div>
+            <ul class="menu">
+                <li><a href="#" class="active"><i class="fa-solid fa-house-flag"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-clone"></i> Our Branches</a>
+                    <div class="drop-down">
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-share"></i> Kotekli</a></li>
+                            <li><a href="#"><i class="fa-solid fa-share"></i> Yenikoy</a></li>
+                            <li><a href="#"><i class="fa-solid fa-share"></i> Akyaka</a></li>
+                            <li><a href="#" id="hidden"><i class="fa-solid fa-share"></i> Kotekli</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"> <i class="fa-solid fa-headset" style="font-size: 20px;"></i> Contact</a></li>
+                <li><a href="#" class="logout">Log Out <i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
+            
+        </nav>
+        <section class="section">
+            <div class="left-side">
+                <div class="left-side-wrapper">
+                    <div class="shortcutLinks">
+                        <h4><i class="fa-solid fa-angles-down"></i> Shortcut Links</h4>
+                        
+                        <ul class="creditLinks">
+                            
+                            <li><a href="#firstCard"><i class="fa-regular fa-circle-right"></i> Student Credit </a></li>
+                            <li><a href=""><i class="fa-regular fa-circle-right"></i>Retired Credit </a></li>
+                            <li><a href="#secondCard"><i class="fa-regular fa-circle-right"></i>Holiday Credit </a></li>
+                            <li><a href=""><i class="fa-regular fa-circle-right"></i>Business Credit </a></li>
+                            <li><a href="#thirdCard"><i class="fa-regular fa-circle-right"></i>Car Credit </a></li>
+                            <li><a href=""><i class="fa-regular fa-circle-right"></i> House Credit </a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="currency">
+                       <div class="item blue">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <i class="fa-solid fa-dollar-sign money up"></i>
+                        <span>29</span>
+                       </div>
+                       <div class="item">
+                        <i class="fa-solid fa-arrow-trend-down"></i>
+                        <i class="fa-solid fa-euro-sign money"></i>
+                        <span>32</span>
+                       </div>
+                       <div class="item">
+                        <i class="fa-solid fa-arrow-trend-down"></i>
+                        <i class="fa-solid fa-sterling-sign money"></i>
+                        <span>36</span>
+                       </div>
+                       <div class="item blue">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <i class="fa-solid fa-manat-sign money up"></i>
+                        <span class="tl">16</span>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="upper-center">
+                    <div class="personal">
+                        <i class="fa-solid fa-user"></i> For personal
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Type what you look for"><i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+        
+                    <i class="bi bi-mic-fill"></i>
+                    <div class="business">
+                        <i class="fa-solid fa-user-tie"></i> For business
+                    </div>
+                </div>
+
+                <div class="main-center">
+                    <div class="cards">
+                        <div class="card first" id="firstCard">
+                            <div class="card-img img1"></div>
+                            <h3>Student Credit</h3>
+                            <p class="text">Succesfull approach for succesfull ones !</p>
+                            <div class="button">Details <i class="fa-solid fa-arrow-right-long"></i></div>
+                            <div class="stats">
+                                <div class="cell">
+                                    <p>8 mins.</p>
+                                    Read
+                                </div>
+                                <div class="cell">
+                                    <p>2M</p>
+                                    Views
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card second" id="secondCard">
+                            <div class="card-img img2"></div>
+                            <h3>Holiday Credit</h3>
+                            <p class="text">Lay back and enjoy your holiday !</p>
+                            <div class="button">Details <i class="fa-solid fa-arrow-right-long"></i></div>
+                            <div class="stats">
+                                <div class="cell">
+                                    <p>5 mins.</p>
+                                    Read
+                                </div>
+                                <div class="cell"><p>12M</p>
+                                    Views
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card third" id="thirdCard">
+                            <div class="card-img img3"></div>
+                            <h3>Car Credit</h3>
+                            <p class="text">Everyone wants to have their <small><b>OWN </b></small>cars !</p>
+                            <div class="button">Details <i class="fa-solid fa-arrow-right-long"></i></div>
+                            <div class="stats">
+                                <div class="cell"><p>6 mins.</p>
+                                Read
+                                </div>
+                                <div class="cell"><p>7M</p>
+                                Views</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="right-side-wrapper">
+                    <div class="acc-container">    <!-- acc container refers to account container -->
+                        <div class="account">
+                            <div><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="infos">
+                                <p>Name : Onur Sahin</p>
+                                <p>Account No : 000-xxx-fff</p>
+                                <p>Gender : <i class="fa-solid fa-mars"></i></p>
+                                <p>Usage-Type : Personal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campaigns-container">
+                        <div class="campaigns-info"><h3>- CAMPAIGNS -</h3>
+                            <p>Be aware of <u><em><b>campaigns!</b></em> </u> </p>
+                            <ul class="cb">
+                                <li><input type="checkbox" id="cb1"><label for="cb1">Credit campaigns</label></li>
+                                <li><input type="checkbox" id="cb2"><label for="cb1">Currency campaigns</label></li>
+                                <li><input type="checkbox" id="cb3"><label for="cb3">Share market</label></li>
+                            </ul>
+                        </div>
+                        
+                        <input type="email" required placeholder="Email" class="email">
+                        <button>Aware Me!</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <ul class="usefulLinks">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Service</a></li>
+                <li><a href="#">Term</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a class="fix-border" href="#">Blog</a></li>
+            </ul>
+            <div class="social-media">
+                 <a href=""><i class="fa-brands fa-instagram"></i></a>
+                 <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                 <a href=""><i class="fa-brands fa-google"></i></a>
+                 <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="downest">Copyright © 2023 All rights reserved </p>
+        </footer>
+    </div>
+    
+</body>
+</html>

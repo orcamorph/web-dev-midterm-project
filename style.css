@@ -1,0 +1,586 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=MuseoModerno:ital,wght@1,900&display=swap');
+
+/* BEFORE PROJECT STARTS, SOME USEFUL PROPERTIES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: rgb(163, 158, 158);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    transition: ease .7s;
+    font-weight: 600;
+    color: black;
+}
+/* NAVBAR  STARTS */
+.navbar{
+    height: 10%;
+    width: 100%;
+    background-color:rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:5px 5%;
+    border-bottom: 2px solid black;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 20px shadow;
+    position: fixed;
+    z-index: 1001;
+    
+    
+}
+.logo{
+    font-family: 'MuseoModerno', sans-serif;
+    font-size: 37px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 17px ;
+    position: relative;
+}
+.menu li{
+    padding-left:20px ;
+
+}
+.menu li:last-child{
+    margin-left: 100px;
+}
+.menu li:hover{
+    scale: .92;
+
+}
+.logout{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius:8px;
+    transition: .5s;
+    flex-wrap: wrap;
+    
+}
+.logout:hover{
+    background-color:rgba(5, 5, 5,.4);
+    color:rgb(255, 0, 0);
+    outline: 1px solid black;
+    box-shadow: 0 0 10px black;
+    font-weight: 700;
+}
+.active{
+    border-bottom: 1.5px solid black !important;
+    
+}
+.drop-down{
+    display:none;
+}
+.navbar ul li:hover .drop-down{
+    display: block;
+    position: absolute;
+    color: aliceblue;
+    box-shadow: 0 0 10px black;
+    
+}
+#hidden{
+    display: none;
+}
+.drop-down ul{
+    background-color:rgba(194, 191, 191, 0.9);
+    border-radius: 6px;
+    padding: 3px;
+    outline: 1px solid black;
+    margin-top: 3px;
+    
+    
+}
+/* NAVBAR PART ENDS */
+/* ----------------------------- */
+/* SECTION PART STARTS and IT CONTAINS "left-side" , "center" and "rigth-side" */
+.section{
+    width: 100%;
+    height:95% ;
+    background-color: aqua;
+    display: flex;
+}
+/* left-side PART STARTS HERE */
+.left-side{
+    width:15%;
+    height: 100%;
+    background-color: #9e9e94;
+    overflow: hidden;
+}
+.left-side-wrapper{
+    height: 80%;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+    top: 58px;
+}
+.shortcutLinks h4{
+    border-radius: 10px 10px 0 0 ;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px 10px 20px;
+    background-color: #0b7dda;
+    opacity: .85;
+    line-height: auto;
+    color: wheat;
+    line-height: 25px;
+    text-align: center;
+    font-size: large;
+    margin-top: 2px;
+} 
+.creditLinks li{
+    padding: 12px;
+}
+.creditLinks li:hover{
+    background-color:#ddd ;
+}
+.creditLinks li:hover a{
+    border-bottom: 1px solid rgba(0 ,0,0,0.6);
+}
+.creditLinks li:nth-child(even){
+    background-color:rgb(237, 237, 237);
+}
+.creditLinks li:nth-child(odd){
+    background-color:#c1bdbd;
+}
+.fa-circle-right{
+    margin-right: 5px;
+}
+.fa-circle-right:hover{
+    scale: 1.3;
+}
+.fa-arrow-trend-up{
+    font-size: 30px;
+    color: green;
+}
+.fa-arrow-trend-down{
+    font-size: 30px;
+    color: red;
+}
+
+.currency{
+    display: flex; 
+    align-items: center;
+    background-color: bisque;
+    border-radius: 5%;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    bottom: 0;
+}
+.item{
+    flex:1
+}
+.item span{
+    font-weight: 600;
+    margin-left: 8px;
+}
+.money{
+    padding: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-bottom: 3.5px;
+}
+.money:hover{
+    background-color: #000;
+    color: #fff;
+    scale:1.16;
+    box-shadow: 0 0 10px orangered;
+}
+
+.up:hover{/* up refers to currency values that puts value up that week */
+    box-shadow: 0 0 10px rgb(0, 255, 42);
+}
+
+.blue{ /* blue refers to blue led neon to make elegant */
+    box-shadow: 0 0 10px rgb(0, 119, 255);
+}
+  /* left-side PART FINISHES */
+/* ---------------------------- */
+/* center PARTS CONTAINS "upper-center" and "main-center"  */
+.center{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* upper-center PART STARTS HERE */
+.upper-center{
+    width: 100%;
+    height: 10%;
+    background-color: #1464A5;
+    margin-top: 50px;
+    position: relative;
+    top: 10px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    line-height: 10%;
+    overflow: hidden;
+}
+.search{
+    padding: 8px;
+    border-radius: 20px;
+    margin-left: 60px;  
+}
+.search input{
+    background-color: rgb(228, 192, 192);
+    border: none;
+    outline:none;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 5px;
+    left: 14px;
+    font-size: 14px;
+    color: black;
+}
+.fa-magnifying-glass{
+    position: relative;
+    right: 13px;
+    bottom: 2px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.search:hover .fa-magnifying-glass{
+    scale: 1.2;
+}
+.fa-microphone{
+    font-size:25px ;                             
+    cursor: pointer;                               
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: gray;
+    padding: 5px;
+}
+.fa-microphone:hover{
+    scale: 1.1;
+    background-color: #d7d7d5;
+
+}
+.personal{
+    background-color: rgb(214, 104, 31);
+    line-height: 60px;
+    border-radius: 8px;
+    outline: orange;
+    padding-right:0 5px 0;
+    margin-left: 50px;
+    border-bottom: 3px solid black;
+    
+}
+.personal:hover{
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    box-shadow: 0 0 10px black;
+}
+.personal:hover .fa-user{
+    scale: 1.2;
+}
+.business{
+    background-color: rgb(63, 136, 136);
+    line-height: 60px;
+    border-radius: 8px;
+    margin-right: 50px;
+}
+.business:hover{
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    box-shadow: 0 0 10px black;
+    background-color: rgb(214, 104, 31);
+
+}
+.business:hover .fa-user-tie{
+    scale: 1.2;
+}
+.fa-user , .fa-user-tie{
+    font-size: 25px;
+}
+/* upper-center PART FINISHES HERE */
+/* ------------------------------- */
+/* main-center PART STARTS HERE */
+.main-center{
+    width: 100%;
+    height: 82%;
+    background-color: rgb(41, 41, 41);
+    padding-top: 4px ;
+    overflow: hidden;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.card{
+    background-color:#cccccc;
+    width: 30%;
+    height: 410px;
+    margin:40px auto;
+    text-align: center;
+    border-radius: 18px;
+}
+.cards h3{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+.cards .card:hover{
+    padding-bottom:15px;
+    cursor: pointer;
+}
+.card .img1{
+    background-image:url(./imgs/student.jpg);
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 17px;
+    border-radius: 15px 15px 0 0 ;
+}
+.card .img2{
+    background-image:url(./imgs/holiday.jpg);
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 17px;
+    border-radius: 15px 15px 0 0 ;
+}
+.card .img3{
+    background-image:url(./imgs/bmw.jpg);
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 17px;
+    border-radius: 15px 15px 0 0 ;
+}
+.card .text{
+    margin-top: 8px;
+}
+.cards .button{
+    margin-top: 6px;
+    padding: 9px 28px;
+    transition: all ease .7s;
+    font-weight: 600;
+}
+.cards .button:hover{
+    color: rgb(0, 119, 255);
+    padding-right: 8px;
+    cursor: pointer;
+}
+.cards .stats{
+    background-color: rgb(31, 30, 30);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+.card .cell{
+    display: none;
+}
+.card:hover .cell{
+    display: block;
+}
+.cell p{
+    font-weight:600 ;
+    font-size: 21px;
+}
+#firstCard:target{
+    box-shadow: 0 0 15px blue;
+}
+#secondCard:target{
+    box-shadow: 0 0 15px blue;
+}
+#thirdCard:target{
+    box-shadow: 0 0 12.5px blue;
+}
+
+/* main-center PART FINISHS */
+/*==== center PART OF THE PROJECT FINISHES ====*/
+/* ------------------------------- */
+/* ridht-side PART OF THE PROEJCT STARTS HERE */
+.right-side{
+    width: 20%;
+    height: 100%;
+    background-color: #9e9e94;
+}
+.right-side-wrapper{
+    height: 90%;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}   
+.account p{
+    padding: 8px;
+}
+.account .infos{
+    padding: 35px 10px 10px 3px;
+    position: absolute;
+    top:50px;
+    background-color:#505049;
+    border-radius: 0px 15% 18% 0px;
+    border-left: 15px solid #1a1a1a;
+    width:100%;
+    text-align: left;
+}
+
+.fa-circle-user{
+    color: black;
+    font-size: 80px;
+    position:relative;
+    z-index: 1;
+    background-color:rgb(153, 153, 102);  
+    border-radius: 50%;
+}
+.account:hover .fa-circle-user{
+    scale: 1.055;
+}
+.account:hover .infos{
+    outline: 1px solid black;
+    color:#bfbfbf;
+    opacity: .95;
+}
+.account:hover .fa-mars{
+    color: #4d4dff;
+    font-size: 20px;
+}
+.campaigns-container{
+    z-index: 10;
+    position: relative;
+    top: 200px;
+    border:1px solid #505049;
+    border-radius: 5% 5%  20% 0 ;
+    background-color: rgb(2, 150, 101);
+    flex-wrap: wrap;
+}
+.campaigns-container h3{
+    letter-spacing: 4px;
+    margin-top: 8px;
+}
+.campaigns-container .cb{
+    display: block;
+    margin-top: 5px;
+    padding: 0;
+}
+.campaigns-container ul{
+    display: flex;
+    align-items:start;
+    padding: 1px;
+}
+.campaigns-container li{
+    text-align: left;
+    border-bottom: 1px solid rgb(56, 55, 55);
+    padding: 4px;
+    border-radius: 5px;
+}
+.campaigns-container li:last-child{
+    border-bottom: none;
+}
+.email{
+    outline: none;
+    border: none;
+    width: 90%;
+    border-bottom: 4px solid black;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}
+.campaigns-container button{
+    width:60% ;
+    height: 35px;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: black;
+    transition: all .4s ease-in-out;
+    color: azure;
+    margin-bottom: 7px;
+}
+.campaigns-container button:hover{
+    background-color: rgb(52, 52, 45);
+    scale: 1.1;
+    font-weight: 800;
+    color: rgb(2, 150, 101);
+}
+/* right-side PART FINISHES */
+/*===== AS right-side PART FINISHED , SECTION PART WHICH CONTAINS left-side,center and right-side ENDS =====*/
+/* ------------------------------ */
+/* footer PART STARTS */
+.footer{
+    height: 25.5%;
+    width: 100%;
+    background-color: rgb(43, 47, 64);
+    padding: 5px 0 0 0;
+    border-top-right-radius: 55px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+}
+.footer .usefulLinks {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 8px 0;
+    
+}
+.footer .usefulLinks li{
+    display: inline-block;
+}
+.footer .usefulLinks li a{
+    border-right: 1px solid black;
+    padding-right: 8px;
+    color: rgb(3, 3, 3);
+    
+}
+.footer .usefulLinks li a:hover{
+    padding:0 25px;
+    color: rgb(182, 176, 166);
+    scale: .5;
+}
+.footer .usefulLinks li .fix-border {
+    border-right: none;
+}
+.footer .social-media{
+    text-align: center ;
+    padding-bottom: 20px;
+    margin-top: 15px;
+    padding-left:5px;
+    
+}
+.footer .social-media a{
+    display: inline-block;
+    text-align: center;
+    color: aliceblue;
+    background-color: rgba(163, 158, 158,0.6);
+    font-size: 30px;
+    padding: 7px;
+    border-radius: 40%;
+    margin: 0 3px;
+    
+}
+.footer .social-media a:hover{
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+}
+.footer .downest{
+    text-align: center;
+    margin: 0;
+}
+/* footer PART ENDS. */
+
